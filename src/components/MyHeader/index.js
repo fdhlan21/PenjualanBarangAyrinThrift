@@ -12,31 +12,28 @@ export default function MyHeader({ onPress, judul }) {
 
     <View style={{
       flexDirection: 'row',
-      backgroundColor: colors.white,
+      backgroundColor: colors.primary,
       padding: 5,
       height: 60,
-      marginBottom: 10,
+      marginBottom: 0,
       borderBottomLeftRadius: 10,
       borderBottomRightRadius: 10,
       alignItems: 'center',
-      borderBottomWidth: 1,
-      borderBottomColor: colors.border,
+     
     }}>
       <TouchableOpacity onPress={onPress} style={{
         padding: 5,
-        borderWidth: 1,
         borderRadius: 20,
-        borderColor: colors.border,
       }}>
-        <Icon type='ionicon' name='chevron-back-outline' size={MyDimensi / 2} color={colors.black} />
+        <Icon type='ionicon' name='arrow-back-circle-outline' size={MyDimensi / 2} color={colors.white} />
       </TouchableOpacity>
       <Text style={{
         flex: 1,
-        left: 20,
-        textAlign: 'left',
-        fontFamily: fonts.secondary[600],
+       left: -18,
+        textAlign: 'center',
+        fontFamily: fonts.primary[600],
         fontSize: MyDimensi / 3,
-        color: colors.black
+        color: colors.white
       }}>{judul}</Text>
     </View>
 

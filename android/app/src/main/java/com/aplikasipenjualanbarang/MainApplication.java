@@ -1,4 +1,4 @@
-package com.aplikasipataka;
+package com.aplikasipenjualanbarang;
 
 import android.app.Application;
 import android.content.Context;

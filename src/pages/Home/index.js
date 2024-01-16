@@ -126,87 +126,14 @@ export default function Home({ navigation, route }) {
 
   {/* MAIN CONTENT */}
 
-  {/* GAYA BELAJAR VARK */}
-  <View style={{padding:10, marginTop:20}}>
-  <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:10,}}>
-        
-              <Text style={{
-                color:'white',
-                fontFamily:fonts.primary[400],
-                fontSize: MyDimensi / 3.1
+<MyCarouser/>
 
-              }}>
-              Gaya belajar anda adalah  gabungan. (VARK)
-              </Text>
-
+            
+  <View style={{padding:10, marginTop:50}}>
+  <View style={{flexDirection:"row", padding:10, justifyContent: 'flex-start',}}>
+  <View style={{padding:1, backgroundColor:colors.primary, width: 30, height: 1}}></View>
+  <Text style={{fontFamily:fonts.primary[400], top: -8, left: 10}}>Menu</Text>
   </View>
-  </View>
-
-
-  {/* SKOR  */}
-  <View style={{padding:10, marginTop:10}}>
-  <View style={{padding:10, backgroundColor:colors.secondary, borderRadius:10,}}>
-        
-              <Text style={{
-                color:'white',
-                fontFamily:fonts.primary[400],
-                fontSize: MyDimensi / 3.5
-
-              }}>
-            Skor anda sebagai berikut :
-              </Text>
-
-
-              <Text style={{
-                color:'white',
-                fontFamily: fonts.primary[400],
-                fontSize: MyDimensi / 4.1
-              }}>
-                Visual :
-              </Text>
-
-
-              <Text style={{
-                color:'white',
-                fontFamily: fonts.primary[400],
-                fontSize: MyDimensi / 4.1
-              }}>
-               Aural/ auditorik :
-              </Text>
-
-
-              <Text style={{
-                color:'white',
-                fontFamily: fonts.primary[400],
-                fontSize: MyDimensi / 4.1
-              }}>
-                Pembaca/ penulis teks :
-              </Text>
-
-
-              <Text style={{
-                color:'white',
-                fontFamily: fonts.primary[400],
-                fontSize: MyDimensi / 4.1
-              }}>
-                Kinestetik :
-              </Text>
-
-
-              
-
-  </View>
-
-  <Text style={{
-                color:'black',
-                fontFamily: fonts.primary[400],
-                fontSize: MyDimensi / 4.1,
-                marginTop:20,
-              }}>
-           Gunakan panduan di bawah ini yang sesuai dengan gaya belajar anda :
-              </Text>
-
-
               {/* MAIN MENU */}
               <View style={{marginTop:20}}>
               {/* MENU YANG DI ATAS  */}
@@ -214,28 +141,44 @@ export default function Home({ navigation, route }) {
 
                 <View style={{flexDirection:"row", justifyContent:'space-around'}}>
 
-              {/* VISUAL  */}
-                <TouchableNativeFeedback onPress={() => navigation.navigate('BelajarVisual')}>
-                  <View style={{ alignItems:'center'}}> 
-                    <Image source={require('../../assets/iconvisual.png')} style={{
+              {/* KATALOG PRODUK  */}
+                <TouchableNativeFeedback onPress={() => navigation.navigate('KatalogProduk')}>
+                  <View style={{ 
+                    alignItems:'center',
+                    padding:10, backgroundColor:colors.primary,
+                    borderRadius:10,
+                    height:120,
+                    width:120,
+
+                  }}> 
+                    <Image source={require('../../assets/catalog.png')} style={{
                       height:80,
                       width:80,
+                      padding:10,
                     }}/>
                     <Text style={{
                       textAlign:'center',
                       fontFamily: fonts.primary[400],
                       fontSize: MyDimensi / 5,
-                      top:10
+                      top:10,
+                      color:'white'
                     }}>
-                      Visual
+                      Katalog Produk
                     </Text>
                   </View>
                 </TouchableNativeFeedback>
 
-                {/* AUDIO */}
-                <TouchableNativeFeedback onPress={() => navigation.navigate('BelajarVisualAudio')}>
-                  <View style={{ alignItems:'center'}}>
-                    <Image source={require('../../assets/iconaudio.png')} style={{
+                {/* KERANJANG */}
+                <TouchableNativeFeedback onPress={() => navigation.navigate('Keranjang')}>
+                  <View style={{ alignItems:'center',
+                    padding:10, backgroundColor:colors.primary,
+                    borderRadius:10,
+                    height:120,
+                    width:120
+
+                  
+                  }}>
+                    <Image source={require('../../assets/keranjang.png')} style={{
                       height:80,
                       width:80,
                     }}/>
@@ -244,8 +187,9 @@ export default function Home({ navigation, route }) {
                       fontFamily: fonts.primary[400],
                       fontSize: MyDimensi / 5,
                       top:10,
+                      color:"white"
                     }}>
-                      Audio
+                      Keranjang
                     </Text>
                   </View>
                 </TouchableNativeFeedback>
@@ -260,39 +204,56 @@ export default function Home({ navigation, route }) {
 
 <View style={{flexDirection:"row", justifyContent:'space-around'}}>
 
-{/* READING / WRITING  */}
-<TouchableNativeFeedback onPress={() => navigation.navigate('BelajarReading')} style={{alignContent:'center', alignItems:"center"}}>
-  <View style={{  alignItems:'center'}}>
-    <Image source={require('../../assets/iconreadung.png')} style={{
+{/* RATING PRODUK  */}
+<TouchableNativeFeedback onPress={() => navigation.navigate('RatingProduk')} style={{alignContent:'center', alignItems:"center"}}>
+  <View style={{  alignItems:'center',
+    padding:10,
+    backgroundColor:colors.primary,
+    borderRadius:10,
+    height:120,
+    width:120,
+
+
+  }}>
+    <Image source={require('../../assets/rate.png')} style={{
       height:80,
       width:80,
-    
+   
     }}/>
     <Text style={{
       textAlign:'center',
       fontFamily: fonts.primary[400],
       fontSize: MyDimensi / 5,
-      top:10
+      top:10,
+      color:"white"
     }}>
-      Reading/{'\n'}Writing
+     Rating Produk
     </Text>
   </View>
 </TouchableNativeFeedback>
 
-{/* KINAESTHETIC */}
-<TouchableNativeFeedback onPress={() => navigation.navigate('BelajarKinaesthetic')}>
-  <View style={{ alignItems:'center'}}>
-    <Image source={require('../../assets/iconkinaesthetic.png')} style={{
+{/* STATUS PESANAN */}
+<TouchableNativeFeedback onPress={() => navigation.navigate('StatusPesanan')}>
+  <View style={{ alignItems:'center',
+    padding:10,
+    backgroundColor:colors.primary,
+    borderRadius:10,
+    height:120,
+    width:120,
+  }}>
+    <Image source={require('../../assets/status.png')} style={{
       height:80,
       width:80,
+
     }}/>
     <Text style={{
       textAlign:'center',
       fontFamily: fonts.primary[400],
-      fontSize: MyDimensi / 5,
-      top:10
+      fontSize: MyDimensi / 7,
+      top:0,
+      color:"white"
     }}>
-      Kinaesthetic
+ Informasi Status{'\n'}Pemesanan Barang
     </Text>
   </View>
 </TouchableNativeFeedback>

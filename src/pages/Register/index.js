@@ -151,11 +151,20 @@ export default function Register({ navigation }) {
 
 
                         {/* INPUT NAMA */}
-                        <MyInput label="Nama" iconname='person' placeholder='Masukan nama'/>
+                        <MyInput label="Nama Lengkap" iconname='person' placeholder='Masukan nama lengkap'/>
 
                         {/* INPUT USERNAME */}
                         <MyGap jarak={20}/>
-                        <MyInput label="Username" iconname="person" placeholder='Masukan username'/>
+                        <MyInput label="Email" iconname="at" placeholder='Masukan email'/>
+
+                        {/* INPUT USERNAME */}
+                         <MyGap jarak={20}/>
+                        <MyInput label="Nomor Telepon" iconname="call" placeholder='Masukan nomor telepon'/>
+
+                            {/* INPUT USERNAME */}
+                            <MyGap jarak={20}/>
+                        <MyInput label="Alamat" iconname="map" placeholder='Masukan alamat'/>
+
 
                         {/*INPUT KATA SANDI */}
                         <MyGap jarak={20}/>

@@ -32,6 +32,12 @@ import {
   GayaBelajarKinaesthetic,
   HasilBelajarKinaesthetic,
   CatatanRujukan,
+  KatalogProduk,
+  RiviewProduk,
+  Keranjang,
+  Checkout,
+  StatusPesanan,
+  RatingProduk,
 
 
 } from '../pages';
@@ -55,7 +61,7 @@ const MainApp = () => {
 
 export default function Router() {
   return (
-    <Stack.Navigator initialRouteName='CatatanRujukan'>
+    <Stack.Navigator initialRouteName=''>
       <Stack.Screen
         name="Splash"
         component={Splash}
@@ -93,14 +99,61 @@ export default function Router() {
       />
 
 <Stack.Screen
-        name="CatatanRujukan"
-        component={CatatanRujukan}
+        name="KatalogProduk"
+        component={KatalogProduk}
         options={{
           headerShown: false,
 
         }}
       />
 
+
+<Stack.Screen
+        name="RiviewProduk"
+        component={RiviewProduk}
+        options={{
+          headerShown: false,
+
+        }}
+      />
+
+
+<Stack.Screen
+        name="Keranjang"
+        component={Keranjang}
+        options={{
+          headerShown: false,
+
+        }}
+      />
+
+<Stack.Screen
+        name="Checkout"
+        component={Checkout}
+        options={{
+          headerShown: false,
+
+        }}
+      />
+
+<Stack.Screen
+        name="StatusPesanan"
+        component={StatusPesanan}
+        options={{
+          headerShown: false,
+
+        }}
+      />
+
+
+<Stack.Screen
+        name="RatingProduk"
+        component={RatingProduk}
+        options={{
+          headerShown: false,
+
+        }}
+      />
 
       <Stack.Screen
         name="Account"

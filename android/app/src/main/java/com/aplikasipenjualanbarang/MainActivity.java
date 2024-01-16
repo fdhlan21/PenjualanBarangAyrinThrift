@@ -1,4 +1,4 @@
-package com.aplikasipataka;
+package com.aplikasipenjualanbarang;
 
 import com.facebook.react.ReactActivity;
 

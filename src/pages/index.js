@@ -18,9 +18,12 @@ import AsupanAsi from './Menu/AsupanAsi';
 import StatusGizi from './Menu/StatusGizi';
 import StatusGiziHasil from './Menu/StatusGiziHasil';
 import CatatanRujukan from './CatatanRujukan';
-
-
-
+import KatalogProduk from './CatalogProduk';
+import RiviewProduk from './CatalogProduk/riview';
+import Keranjang from './Keranjang';
+import Checkout from './Keranjang/checkout';
+import StatusPesanan from './StatusPesanan';
+import RatingProduk from './RatingProduk';
 
 
 
@@ -31,6 +34,13 @@ export {
   Login,
   Register,
   CatatanRujukan,
+  KatalogProduk,
+  RiviewProduk,
+  Keranjang,
+  Checkout,
+  StatusPesanan,
+  RatingProduk,
+
  
   Account,
   AccountEdit,

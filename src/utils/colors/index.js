@@ -1,8 +1,8 @@
 export const colors = {
-  primary: '#3C8A5D',
-  secondary: '#739072',
-  tertiary: '#E07464',
-  foourty: '#B3D0F1',
+  primary: '#27AB07',
+  secondary: '#F06C0D',
+  tertiary: '#000000',
+  foourty: '#ffffff',
   background: '#FFFFFF',
   success: '#078422',
   warning: '#F37120',
@@ -18,6 +18,6 @@ export const colors = {
   myback2: '#00000080',
   myback3: '#F4F6FF',
   hijau: '#56BC6C',
-  kuning: '#D7A43A',
+  kuning: '#FFF312',
   merah: '#B9454A'
 };
